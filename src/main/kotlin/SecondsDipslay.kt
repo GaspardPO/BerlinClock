@@ -1,7 +1,7 @@
-class SecondsDipslay(private val seconds: String) {
+class SecondsDipslay(private val seconds: Int) {
 
     fun state(): String =
-        if (seconds.toInt().even()) "Y" else "O"
+        if (seconds.even()) "Y" else "O"
 }
 
 private fun Int.even(): Boolean =
